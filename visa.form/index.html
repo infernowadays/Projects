@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <title>Форма</title>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+	<link rel="stylesheet" href="css/demo-page.css">
+	<link rel="stylesheet" href="css/style-modal.css">
+
+	<!---tmp---->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-----tmp--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"> </script>
+	
+	
+    <script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"></script>
+    
+	<link href="css/styleIndex.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="body">
+
+<form action="" method="POST" id="FormChoose">
+    <label>Online оформление заявки</label>
+    <select id="select">
+        <option value="Бизнес виза">Бизнес виза</option>
+        <option value="Рабочая виза">Рабочая виза</option>
+        <option value="Воеводская виза">Воеводская виза</option>
+        <option value="Заполнение анкеты">Заполнение анкеты</option>
+    </select>
+</form>
+
+
+
+<div class="FirstForm">
+    <form action="action1.php" enctype="multipart/form-data" multiple="multiple" method="POST" id="1_form">
+        <div id="f1" class="1">
+        <h3>1. Бизнес виза</h3>
+        <p><input type="text" class="names" name="1_FirstName[]" placeholder="Имя на латинице" id="FF1" required></p>
+        <p><input type="text" class="names"  name="1_SecondName[]" placeholder="Фамилия на латинице" id="FF2" required></p>
+
+        <div class="datetimepicker3 input-append">
+            <input data-format="yyyy/MM/dd" name="1_calendar1[]" type="text" id="FF3" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+
+        <p class="date">Дата рождения</p>
+        <div class="clear"></div>
+        <p><input type="text" name="1_Passport[]" class="passport" placeholder="Серия и номер загранпаспорта" id="FF4" required></p>
+
+        <div class="datetimepicker3 input-append">
+            <input data-format="yyyy/MM/dd" name="1_calendar2[]" type="text" id="FF5" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span> 
+        </div>
+
+
+        <p class="date">С какого числа открываем визу</p>
+        <div class="clear"></div>
+        <label>Данные фирмы</label>
+        <p><textarea id="1_textarea1" name="1_textarea[]" rows="6" cols="32" required></textarea></p>
+        <p><input type="text" class="names" name="1_FIO[]" placeholder="ФИО директора компании" id="FF6" required></p>
+        <p><input type="text" class="proffession" name="1_Profession[]" placeholder="Какую професию нам указать в приглашении?" required id="FF7"></p>
+        <p ><a  class="wew" href="javascript:DoIt();">Загрузить свой контракт</a></p>
+        <p><input class="1_file 1" type="hidden" name="FileFirstFrom[]" id="FileFirstFrom" required></p>
+        <p><input id="1_email" class="proffession" type="text" name="1_email[]" placeholder="Обратный Email для связи" required></p>
+        </div>
+
+
+        <div class="button"><button type="submit">Отправить</button></div>
+    </form>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="SecondForm">
+    <form action="action2.php" enctype="multipart/form-data" multiple="multiple" method="POST" id="2_form">
+        <div id="f2" class="1">
+            <h3>2. Рабочая виза</h3>
+        <p><input type="text" class="names" name="2_FirstName[]" placeholder="Имя на латинице" id="SF1" required></p>
+        <p><input type="text" class="names"  name="2_SecondName[]" placeholder="Фамилия на латинице" id="SF2" required></p>
+
+        <div class="datetimepicker3 input-append">
+            <input data-format="yyyy/MM/dd" name="2_calendar1[]" type="text" id="SF3" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+
+        <p class="date">Дата рождения</p>
+        <div class="clear"></div>
+        <p><input type="text" name="2_Passport[]" class="passport" placeholder="Серия и номер загранпаспорта" id="SF4" required></p>
+
+        <div class="datetimepicker3 input-append">
+			<input data-format="yyyy/MM/dd" name="2_calendar2[]" type="text" id="SF5" required>
+			<span class="add-on">
+				<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+			</span>
+        </div>
+
+        <p class="date">С какого числа открываем визу</p>
+        <div class="clear"></div>
+
+        <label class="adress">Укажите Ваш адрес регистрации</label>
+        <p><textarea id="2_textarea" name="2_textarea[]" rows="6" cols="32" required></textarea></p>
+        <p><input id="2_email" class="proffession" type="text" name="2_email[]" placeholder="Обратный Email для связи" required></p>
+        </div>
+
+
+        <div class="button"><button type="submit">Отправить</button></div>
+    </form>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="ThirdForm">
+    <form action="action3.php" enctype="multipart/form-data" method="POST" id="3_form">
+        <div id="f3" class="1">
+            <h3>3. Воеводская виза</h3>
+        <p><input type="text" class="names" name="3_FirstName" placeholder="Имя на латинице" id="TF1" required></p>
+        <p><input type="text" class="names"  name="3_SecondName" placeholder="Фамилия на латинице" id="TF2" required></p>
+
+        <!-----calendar----->
+        <div id="datetimepicker3" class="input-append">
+            <input data-format="yyyy/MM/dd" name="3_calendar" type="text" id="TF3" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+
+
+        <p class="date">Дата рождения</p>
+        <div class="clear"></div>
+
+        <p><input type="text" name="3_Passport" class="parents" placeholder="Серия и номер загранпаспорта" id="TF4" required></p>
+        <p><input type="text" class="parents" name="3_Mothername" placeholder="Фамилия и имя матери (лат)" id="TF5" required></p>
+        <p><input type="text" class="parents" name="3_motherFirstName" placeholder="Девичья фамилия матери" id="TF6" required></p>
+        <p><input type="text" class="parents" name="3_fatherName" placeholder="Фамилия и имя отца (лат)" id="TF7" required></p>
+
+        <label>Добавьте все отсканированные страницы Вашего загранпаспорта</label>
+
+		
+		<p ><a  class="wew3" href="javascript:DoIt();">+ Добавить сканы паспорта</a></p>
+        <p><input class="3__file" type="hidden"  name="fileFF" required></p>
+		
+        </div>
+
+
+        <div class="button"><button type="submit">Отправить</button></div>
+    </form>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="FourthForm">
+	<form action="action4.php" enctype="multipart/form-data" method="POST" id="4_form">
+	        <div class="fix">
+		<h3>4. Заполнение анкеты</h3>
+    <p><input type="text" class="names" name="rusName4" placeholder="ФИО на русском языке"  id="FFT1" required></p>
+    <p><input type="text" class="names"  name="enName4" placeholder="ФИ на латинице (заглавными буквами)" id="FFT2" required></p>
+	<p><input type="text" class="names"  name="anotherSecondName4" placeholder="Иные фамилии (если были)" id="FFT3" required></p>
+
+	<p class="date4">Дата рождения</p>
+        <div class="datetimepicker3 input-append" id="preBirth">
+            <input data-format="yyyy/MM/dd" type="text" name="birth4" id="FFT4" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+
+
+	
+	<div class="clear"></div>   
+
+	
+	<select id="family" class="family" name="maritalism4" required><br>
+		<option value="" disabled selected>Семейное положение</option>
+		<option value="select1">Холост</option>
+		<option value="select2">Женат</option>
+		<option value="select3">Не замужем</option>
+		<option value="select4">Замужем</option>
+		<option value="select5">Не проживает с супругом</option>
+		<option value="select6">Разведен/-а</option>
+		<option value="select7">Вдовец/вдова</option>
+		<option value="select8">Другой</option>
+	</select>
+	
+	<p><textarea id="textarea41" class="textarea41" name="area_41" rows="6" cols="32"  required></textarea></p>
+    <p><input type="text" class="passport4" name="passport4" placeholder="Серия и номер загранпаспорта" id="FFT5" required></p>
+	<p><input type="text" class="getPassport4" name="getPassport4" placeholder="Орган, выдавший паспорт" id="FFT6" required></p>
+	
+	
+		<p class="firstDate">Дата выдачи</p>
+        <div class="datetimepicker3 input-append" id="data1">
+            <input data-format="yyyy/MM/dd" type="text" name="firstDate4"  id="FFT7" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+        <script type="text/javascript">
+        </script>
+		
+
+	<div class="clear"></div>
+	<p class="secondDate">Действителен до</p>
+        <div class="datetimepicker3 input-append" id="data1">
+            <input data-format="yyyy/MM/dd" type="text" name="secondDate4"  id="FFT8" required>
+            <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+        </div>
+
+	<div class="clear"></div>
+	
+	<p><textarea id="textarea42" class="textarea42" name="area_42" rows="6" cols="32"  required></textarea></p>
+	<p><input type="text" class="index" name="index4" placeholder="Почтовый индекс" id="FFT9" required ></p>
+	<p><input type="text" class="email" name="email4" placeholder="Email" id="FFT10" required ></p>
+	<p><input type="text" class="number" name="number4" placeholder="Контактный телефон"  id="FFT11" required></p>
+  	<p><textarea id="textarea43" name="textarea43" name="area_43" rows="6" cols="32"  required></textarea></p>
+	
+		<label class="visaBefore">Были ли у вас ранее визы. Если да, то укажите</label>
+	<div id="f4" class="1">
+	
+		<div class="clear"></div>
+				<p class="dateFrom">C</p>
+				<div class="datetimepicker3 input-append" id="data2">
+					<input data-format="yyyy/MM/dd" type="text" class="F4input" name="visaStart4[]" id="FFT12" required >
+					<span class="add-on">
+			  <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+			  </i>
+			</span>
+				</div>
+				<script type="text/javascript">
+				</script>
+
+			<p class="dateTo">по</p>
+
+				<div class="datetimepicker3 input-append" id="data2">
+					<input data-format="yyyy/MM/dd" type="text" class="F4input" name="visaEnd4[]"  id="FFT13" required>
+					<span class="add-on">
+			  <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+			  </i>
+			</span>
+				</div>
+
+		</div>
+					
+	<div class="NewForm4"><div class="plus">+</div></div>
+		<div class="clear"></div>
+
+
+		<div class="download">
+	<p>Загрузить фото паспорта на странице с фото</p>
+	<p ><a  class="wew4" href="javascript:DoIt();">Выбрать&nbsp &nbsp &nbsp &nbsp &nbsp &nbspзагрузить</a></p>
+	<p><input class="4__file" type="hidden" name="4__file" required></p>
+	</div>
+	
+	<label class="feedback">Обратная связь</label>
+
+	<p><input type="text" class="backEmail" name="backEmail4" placeholder="Email Adress"  id="FFT14" required></a>
+	<p><input type="text" class="backNumber" name="backNumber4" placeholder="Телефонный номер"  id="FFT15" required></a>
+	</div>
+	<div class="button"><button type="submit">Отправить</button></div>
+	
+</form>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<div class="NewForm" id="NewFormId"><div class="plus">+</div><p class="add" id="NewFormIdHelpMe">Добавить ещё одну заявку</p></div>
+
+<a href="index.html" class="overlay" id="win4"></a>
+<div class="popup">
+	<h2>Success!</h2>
+	<a class="close" title="Закрыть" href="index.html"></a>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+	var countCopies = 1;
+	var counterForFourthForm = 1;
+    var num=1;
+    var variableX = 'Бизнес виза';
+    var n=String(num);
+    var n1;
+    var blok = $("."+1).clone();
+
+	  var fileName;
+	
+	
+    $( document ).ready(function() {
+	
+	
+
+    $("#FileFirstFrom").change(function(e){
+            fileName = "1_" + e.target.files[0].name;
+			 
+			
+                $.ajax({
+                    type: "POST",
+                    url: 'action1.php',
+                    data: "NAME=" + fileName,
+                    success: function(data)
+                    {
+                        alert("success!");
+                    }
+                });
+
+			<!----location.href = "action1.php?id=" + e.target.files[0].name;--->
+        });
+
+	
+
+	
+	
+	
+	
+        $('#1_textarea1').val('Название фирмы, юр. адрес\nбанковские реквизиты\nУНН');
+        $('#2_textarea').val('Область, город, адрес');
+		
+		$('#textarea41').val('Место и страна рождения\nграданство при рождении...');
+		$('#textarea42').val('Адрес регистрации (полный)');
+		$('#textarea43').val('Место работы (если есть)\nНазвание и адрес полностью\nКем работаете\nКонтактный номер работы');
+
+        $(document).on('click','.wew', function(){
+            $( this ).parent().parent().children("p").children(".1_file").attr("type","file");
+        });
+
+
+		
+		
+		
+        $( ".NewForm" ).click(function() {
+		
+
+            
+			
+			num++;
+            n=String(num);
+            n1=String(num-1);
+            blok.clone().removeClass(n1).addClass(n).insertBefore(".button");
+			
+			if(countCopies == 1 && counterForFourthForm == 1) 
+			{
+				var s1 = "div#f1.2";
+				var s2 = "div#f2.2";
+				var s3 = "div#f3.2";
+				var s4 = "div#f4.2";
+				countCopies = 2;
+				
+				var form41 = "div#f1.2";
+				var form42 = "div#f2.2";
+				var form43 = "div#f3.2";
+				counterForFourthForm = 2;
+			}
+			else
+			{
+				var s1 = "div#f1.1." + countCopies;
+				var s2 = "div#f2.1." + countCopies;
+				var s3 = "div#f3.1." + countCopies;
+				var s4 = "div#f4.1." + countCopies;
+				
+				var form41 = "div#f1." + counterForFourthForm;
+				var form42 = "div#f2." + counterForFourthForm;
+				var form43 = "div#f3." + counterForFourthForm;
+			}
+			
+			countCopies++;
+			counterForFourthForm++;
+			
+            switch (variableX) {
+                case 'Бизнес виза':
+                    $('.FirstForm, #f1').css("display","block");
+					
+                    $('.SecondForm, #f2').css("display","none");
+					$(s2).remove(); 
+					
+                    $('.ThirdForm, #f3').css("display","none");
+					$(s3).remove(); 
+					
+                    $('.FourthForm, #f4').css("display","none");
+					$(s4).remove(); 
+					
+                    $('.NewForm').css("display","block");
+                    break;
+                case 'Рабочая виза':
+                    $('.SecondForm, #f2').css("display","block");
+					
+                    $('.FirstForm, #f1').css("display","none");
+					$(s1).remove(); 
+					
+                    $('.ThirdForm, #f3').css("display","none");
+					$(s3).remove(); 
+                    
+					$('.FourthForm, #f4').css("display","none");
+					$(s4).remove(); 
+										
+                    $('.NewForm').css("display","block");
+                    break;
+                case 'Воеводская виза':
+                    $('.ThirdForm, #f3').css("display","block");
+					$(s1).remove(); 
+                    $('.SecondForm, #f2').css("display","none");
+					$(s2).remove(); 
+                    $('.FirstForm, #f1').css("display","none");
+                    $('.FourthForm, #f4').css("display","none");
+					$(s4).remove(); 
+                    $('.NewForm').css("display","none");
+                    break;
+                case 'Заполнение анкеты':
+                    $('.FourthForm, #f4').css("display","block");
+                    $('.ThirdForm, #f3').css("display","none");
+					$(form43).remove(); 
+                    $('.SecondForm, #f2').css("display","none");
+					$(form42).remove(); 
+                    $('.FirstForm, #f1').css("display","none");
+					$(form41).remove(); 
+                    $('.NewForm').css("display","none");
+                    break;
+            }
+
+			
+            
+
+
+            $(function() {
+                $('.datetimepicker3').datetimepicker({
+                    pickTime: false
+                });
+            });
+			
+			
+			
+        });
+		
+
+		
+		
+
+        $(function() {
+            $('.datetimepicker3').datetimepicker({
+                pickTime: false
+            });
+        });
+
+        $(function() {
+            $('#datetimepicker3').datetimepicker({
+                pickTime: false
+            });
+        });
+
+		
+
+        $("#select").change(function(){
+
+            variableX = $(this).val();
+					
+			
+			
+            switch (variableX) {
+                case 'Бизнес виза':
+                    $('.FirstForm, #f1').css("display","block");
+                    $('.SecondForm, #f2').css("display","none");
+                    $('.ThirdForm, #f3').css("display","none");
+                    $('.FourthForm, #f4').css("display","none");
+                    $('.NewForm').css("display","block");
+                    break;
+                case 'Рабочая виза':
+                    $('.SecondForm, #f2').css("display","block");
+                    $('.FirstForm, #f1').css("display","none");
+                    $('.ThirdForm, #f3').css("display","none");
+                    $('.FourthForm, #f4').css("display","none");
+                    $('.NewForm').css("display","block");
+                    break;
+                case 'Воеводская виза':
+                    $('.ThirdForm, #f3').css("display","block");
+                    $('.SecondForm, #f2').css("display","none");
+                    $('.FirstForm, #f1').css("display","none");
+                    $('.FourthForm, #f4').css("display","none");
+                    $('.NewForm').css("display","none");
+                    break;
+                case 'Заполнение анкеты':
+                    $('.FourthForm, #f4').css("display","block");
+                    $('.ThirdForm, #f3').css("display","none");
+                    $('.SecondForm, #f2').css("display","none");
+                    $('.FirstForm, #f1').css("display","none");
+                    $('.NewForm').css("display","none");
+                    break;
+            }
+
+			
+			
+			
+            for (num=num; num>1; num--) {
+                n=String(num);
+                n1=String(num-1);
+                $("." + n).remove();
+            }
+        });
+
+		
+
+		$(document).on('click','.wew4', function(){
+           $( this ).parent().parent().children("p").children(".4__file").attr("type","file");
+        });
+
+        $( ".NewForm4" ).click(function() {
+            num++;
+            var n=String(num);
+            var n1=String(num-1);
+            $("#f4").clone().removeClass(n1).addClass(n).insertBefore(".NewForm4");
+            $("."+n+" .4__file").attr("type","hidden");
+
+		$(function() {
+			$('.datetimepicker3').datetimepicker({
+				pickTime: false
+			});
+		});
+		
+		 $(function() {
+            $('.datetimepicker3').datetimepicker({
+                pickTime: false
+            });
+        });
+
+		});
+		
+		
+			$(document).on('click','.wew3', function(){
+           $( this ).parent().parent().children("p").children(".3__file").attr("type","file");
+        });
+
+
+		
+		
+
+    });
+</script>
+
+</div>
+</body>
+
+</html>

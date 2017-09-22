@@ -1,0 +1,719 @@
+input::-webkit-input-placeholder {
+    color: black !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: black !important;
+}
+
+input:-ms-input-placeholder {
+    color: black !important;
+}
+
+textarea:-moz-placeholder { color: black; }
+
+textarea::-webkit-input-placeholder { color: black; font-size: 19px;}
+
+
+
+.porogi1 a{
+	color: white;
+	text-decoration: none;
+}
+
+.block8-refs p a{
+	color: white;
+}
+
+
+
+
+
+#logo11{
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 3%;
+    width: 250px;
+}
+
+
+
+
+
+.ul12{
+    font-weight: 900;
+    font-size: 18px;
+    display: flex;
+    width: 120%;
+    text-align: left;
+    font-family: Calibri;
+}
+
+.ul12 p {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+
+.ul12 img{
+   width: 70px;
+}
+
+.ul12 p:nth-child(2n){
+    color: #A5A6A8;
+}
+
+.s4 hr , .s6 hr, .s7 hr, .s8 hr{
+   border: none;
+   color: #3A60AB;
+   background-color: #3A60AB;
+   height: 5px;
+   margin: 0 auto;
+   width: 170px;
+   margin-top: 1%;
+}
+
+
+.contacts1{
+    margin-top: 100px;
+    text-align: center;
+    background-image: url("../images/Layer11.png");
+    background-size: cover;
+    padding: 1.5% 0;
+}
+
+.contacts1 li {
+    display: inline-block;
+    color: white;
+    margin: 0 3.5%;
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts1 li {
+        display: inline-block;
+        color: white;
+        margin: 0 1.5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cdvig1{
+        width: 100%;
+    }
+
+    .ul12 img{
+        width: 60px;
+    }
+
+    .ul12 p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .ul12{
+        margin: 0 0;
+        width: 200px;
+    }
+
+    .cdvig1{
+        width: 300px;
+        margin-right: -10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cdvig1 {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .ul12 {
+        width: 450px;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .ul12 img {
+        width: 80px;
+    }
+    .cdvig1 img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .ul12 {
+        width: 300px;
+    }
+
+    .ul12 img{
+        width: 80px;
+    }
+
+    .cdvig1 img {
+        width: 80px;
+    }
+    .cdvig1 p {
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .ul12 {
+        margin-left: -60px;
+    }
+
+}
+
+#nav-wrap1{
+    float: left;
+    padding-top: 2%;
+    padding-right:3%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    #nav-wrap1{
+        display: block;
+    }
+}
+
+#nav1 a{
+    font-size: 20px;
+    font-family: Calibri;
+    text-decoration: none;
+    color: white;
+    visibility: hidden;
+    width: 150px;
+    display: block;
+    background-color: #1C1930;
+    border: 1px solid black;
+}
+
+#shapka1{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+#phone1{
+    padding-left:3%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#block1{
+    background-image: url("../images/car1.png");
+    background-size: cover;
+}
+
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+#menu1{
+    margin-left: 43%;
+    padding-top: 3%;
+}
+
+#menu1 > ul > li {
+    display: inline;
+    margin-right: 8%;
+}
+
+#menu1 > ul > li > a{
+    color: white;
+    font-family:Calibri;
+    font-weight: 600;
+}
+
+#main11 {
+    width: 100%;
+    font-size:29px;
+    margin-top: 210px;
+    color: white;
+    font-family:Calibri;
+    text-align: center;
+}
+
+#main11 > h2 {
+    font-size:35px;
+}
+
+.buttons1{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.button1{
+    font-weight: 700;
+    color: white;
+    padding: 25px 90px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: rgba(0,0,0, 0.0);
+    font-weight: 900;
+    border: 2px solid white;
+}
+
+#button12{
+    background: #3A60AB;
+    margin-left: 1%;
+    border: 2px solid #3A60AB;
+}
+
+.porogi1{
+    position: relative;
+    margin-top: 8%;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.porogi1 p{
+    display: inline-block;
+    font-family: Calibri;
+}
+
+#strelka11{
+    position: relative;
+    left: -10px;
+    top:8px;
+    display: inline-block;
+}
+#strelka12{
+    position: relative;
+    left: -10px;
+    top:8px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    #menu1{
+        margin-left: 3%;
+        padding-top: 2%;
+    }
+
+    #logo11{
+        padding-top: 2%;
+        margin-left: -8%;
+    }
+
+
+    #menu1 > ul > li {
+        float: right;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    .button1{
+        font-weight: 700;
+        color: white;
+        padding: 20px 78px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #menu1{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #menu1{
+        margin-left: 10%;
+        visibility: hidden;
+    }
+
+    #logo11 {
+        display: none;
+    }
+
+    #main11 h1{
+        font-size: 40px;
+        margin-bottom: 2.5%;
+    }
+
+    #main11 h2{
+        font-size: 35px;
+    }
+
+    #shapka1{
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin: -100px 0 0 -220px;
+    }
+
+    #phone1{
+        width: 45px;
+        padding-left: 45px;
+    }
+
+
+    #logo1{
+        width: 250px;
+    }
+
+    .menuicon1 img{
+        width: 45px;
+        padding-right: 30px;
+    }
+
+
+    #strelka11{
+        visibility: hidden;
+    }
+
+    #strelka12{
+        visibility: visible;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    #button11{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.block2 p:first-child{
+    padding-top: 3%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Calibri;
+    font-weight: 800;
+}
+
+.block2 hr {
+    border: none;
+    color: #3A60AB;
+    background-color: #3A60AB;
+    height: 5px;
+    margin: 0 auto;
+    width: 170px;
+    margin-top: 1%;
+}
+
+.block2 p {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 21px;
+    font-family: Calibri;
+}
+
+
+.container2{
+    margin: 2% 11% 15% 11%;
+}
+
+.galleryItem2{
+    float: left;
+    width: 21.7%;
+    margin-right: 4%;
+    display: block;
+    text-align: center;
+    height: 180px;
+    margin-top: 0;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .container2{
+        margin: 6% 11% 15% 11%;
+    }
+
+    .galleryItem2{
+        width: 45.7%;
+        margin-right: 2%;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container2{
+        margin: 6% 11% 15% 11%;
+    }
+
+    .galleryItem2{
+        width: 99%;
+        margin-right: 0;
+        margin-bottom: 40%;
+    }
+}
+
+.galleryItem2:nth-child(4n){
+    margin-right: 0;
+}
+
+.galleryItem2 *{
+    display: inline;
+}
+
+
+.galleryItem2 img{
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+.bold2{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.buttons2{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#button21{
+    margin-top: 5%;
+    background: #3A60AB;
+    margin-left: 1%;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+#block5{
+    background: url("../images/layer51.png") 50% 0 no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+
+#block5 p{
+    color: white;
+    font-weight: 800;
+    font-family:Calibri;
+}
+
+#block5 p:nth-child(2n){
+    font-size:55px;
+}
+
+
+
+.block51 hr {
+    border: none;
+    color: #3A60AB;
+    background-color: #3A60AB;
+    height: 5px;
+    margin: 0 auto;
+    width: 170px;
+    margin-top: 0.4%;
+    margin-bottom: 2.5%;
+}
+
+.block51 p {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 22px;
+    font-family: Calibri;
+}
+
+.block51 p:nth-child(4n) {
+    margin-bottom: 2%;
+}
+
+.block51 p:nth-child(3n) {
+    margin-bottom: -0.5%;
+}
+
+.block51 p:first-child{
+    padding-top: 0.7%;
+    text-align: center;
+    font-size: 43px;
+    font-family: Calibri;
+    font-weight: 100;
+}
+
+.block51 p:last-child{
+    font-size: 21px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    #block5{
+        background: url("../images/layer5.png");
+    }
+}
+
+<!------------------------------------------------------------------------------------------------------>
+
+    #block6{
+        margin-top: -2%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+
+#block6 p{
+    text-align: justify;
+    font-family: Calibri;
+    font-weight: 540;
+    margin: 0 auto;
+}
+
+
+#block6 p:first-child{
+    text-align: center;
+}
+
+#block6 p img{
+    margin-top: 50px;
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+#block6 div hr{
+    margin-bottom: 50px;
+}
+
+#block6 p:nth-child(2n){
+    text-align: center;
+}
+
+.text6{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #block6 img {
+        width: 70%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    #block6 img{
+        display: none;
+    }
+
+    #block6 p:nth-child(3){
+        display: none;
+    }
+
+    #block6 p:nth-child(5){
+        display: none;
+    }
+
+    .text6{
+        padding-top: 10%;
+        display: block;
+        text-align: left;
+        margin-top: 1%;
+        font-size: 21px;
+        font-family: Calibri;
+        font-weight: 550;
+        color: #565656;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+@media screen and (max-width: 483px) {
+
+    .img-car {
+        height: 240px;
+    }
+
+    .car3 {
+        height: 240px;
+    }
+
+    .bg4 {
+        height: 920px;
+    }
+}
+
+    @media screen and (max-width: 470px) {
+        #shapka2 {
+            left: 49%;
+        }
+
+        #shapka1 {
+            width: 400px;
+            height: 200px;
+            top: 25%;
+            left: 50%;
+            margin: -100px 0 0 -180px;
+        }
+
+        #phone1 {
+            width: 40px;
+            padding-left: 25px;
+        }
+
+        #logo1 {
+            width: 230px;
+        }
+
+        .menuicon1 img {
+            width: 40px;
+            padding-right: 10px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 440px) {
+
+        .bg3 {
+            height: 850px;
+        }
+
+    }
+
+    @media screen and (max-width: 770px) {
+        .bg3-huge {
+            height: 920px;
+        }
+    }
+
+    @media screen and (max-width: 685px) {
+        .bg3-huge {
+            height: 1040px;
+        }
+    }

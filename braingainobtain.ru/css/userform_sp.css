@@ -1,0 +1,220 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #7418c4;
+  
+}
+
+form {
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.85;
+}
+
+h1 {
+  margin: 0 10% 30px 7%;
+  padding-top: 3%;
+  text-align: left;
+  font-size: 70px;
+}
+#job,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+
+select{
+ 
+  text-transform:  uppercase;
+ 
+  font-size: 20px;
+  font-family: 'Avenir', sans-serif;
+  height: auto;
+  margin: 0;
+  margin-left: 7%;
+  outline: 0;
+  
+
+  border: none;
+  border-bottom-width: 2px; 
+  border-bottom-style: solid; 
+  border-bottom-color: #7418c4;
+  
+  padding: 5% 1.5% 5% 1.5%;
+ 
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 3%;
+}
+
+#time{
+	padding: 5% 1.5% 4% 1.5%;
+}
+
+textarea{
+	text-transform:  uppercase;
+ 
+  font-size: 20px;
+  font-family: 'Avenir', sans-serif;
+  height: auto;
+  margin: 0;
+  margin-left: 7%;
+  outline: 0;
+  
+
+  border: none;
+  border-bottom-width: 2px; 
+  border-bottom-style: solid; 
+  border-bottom-color: #7418c4;
+  
+  padding: 3.9% 1.5% 2.6% 1.5%;
+ 
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 3%;
+}
+
+
+select {
+
+  height: auto;
+  margin:0;
+  font-size: 20px;
+  font-family: 'Museo Slab', sans-serif;
+}
+
+button {
+	min-width: 400px;
+  margin-left: 7%;
+  padding: 35px 45px 35px 45px;
+  color: #fff;
+  background-color: #7418c4;
+  font-size: 45px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 25%;
+  border: 2px solid #7418c4;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.4) inset;
+  margin-bottom: 15px;
+}
+
+fieldset {
+  margin-bottom: 2%;
+  border: none;
+}
+
+legend {
+  margin-left: 7%;
+  font-size: 28px;
+  margin-bottom: 2%;
+}
+
+.number {
+  background-color: #7418c4;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 36px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+.button{
+	clear: both;
+}
+
+.field1{
+	float:left;
+	width:40%;
+	margin-right:15%;
+}
+
+.field2{
+	width:40%;
+}
+
+@media screen and (max-width: 1050px) {
+.field2{
+	clear:both;
+	float:left;
+	width:90%;
+}
+.field1{
+	width:90%;
+}
+}
+
+#text, #time, #job, #mail, #number, #name{
+	width:100%;
+}
+
+
+
+.field1 #name, #mail, #number{
+	
+}
+
+.field2 #text, #time, #job{
+	
+}
+
+::webkit-input-placeholder{
+	color:#827570;
+
+}
+
+::-moz-placeholder{
+	color:#827570;
+}
+
+::-ms-input-placeholder{
+	color:#827570;
+}
+
+@media screen and (max-width: 460px) {
+
+form{
+	#min-width: 480px;
+}
+
+	.button {
+		margin: 0;
+		width: 100%;
+	}
+	
+	button {
+		margin: 0;
+		width: 100%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
